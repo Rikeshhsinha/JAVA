@@ -1,0 +1,78 @@
+import java.util.*;
+
+public class Demo {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+
+        while (true) {
+        System.out.println("Enter A for addition S for Subtraction M for Multiplication and D for Divide ");
+
+        System.out.println("E for Exit");
+
+        
+
+            char ch = sc.next().toUpperCase().charAt(0);
+
+            switch (ch) {
+
+                case 'A':
+
+                    System.out.println("Enter two number for addition :");
+                    int a = sc.nextInt();
+                    int b = sc.nextInt();
+
+                    int sum = a + b;
+                    System.out.println("The sum is " + sum);
+                    break;
+
+                case 'S':
+
+                    System.out.println("Enter two number for subtraction :");
+                    int c = sc.nextInt();
+                    int d = sc.nextInt();
+
+                    int diff = c - d;
+                    System.out.println("The difference is " + diff);
+                    break;
+
+                case 'M':
+
+                    System.out.println("Enter two number for multiplication :");
+                    int e = sc.nextInt();
+                    int f = sc.nextInt();
+
+                    int prod = e * f;
+                    System.out.println("The product is " + prod);
+                    break;
+
+                case 'D':
+
+                    System.out.println("Enter two number for division :");
+                    int g = sc.nextInt();
+                    int h = sc.nextInt();
+
+                    if (h != 0) {
+                        double div = (double) g / h;
+                        System.out.println("The quotient is " + div);
+                    } else {
+                        System.out.println("Invalid Number Denominator is '0' ");
+                    }
+                    break;
+
+                case 'E':
+                    System.out.println("Exiting the program. Goodbye!");
+                    return;
+
+                default:
+
+                    System.out.println("Invalid choice. Please enter A, S, M, D, or E.");
+                    break;
+            }
+        }
+
+    }
+
+}
