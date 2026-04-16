@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        //Find the area of Rectangle
+        System.out.println("Enter the length of Rectangle :");
+
+        Scanner sc = new Scanner(System.in);
+
+        int length = sc.nextInt();
+
+        System.out.println("Enter the width of Rectangle :");
+         int width = sc.nextInt();
+
+
+         int area = length * width;
+
+        System.out.println("The area of the rectangle is : " + area);
+        
+        sc.close();
+
+    }
+}
+
+
+
